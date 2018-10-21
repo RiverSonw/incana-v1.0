@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center_horizontal"
+              android:orientation="vertical"
+              android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/iv_recommend"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="@drawable/new_img_loading_2"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:lines="2"
+        android:text="全款预售【喵鹿酱】樱桃蜜语 毛呢绣花 小高腰半裙"
+        android:textColor="#000"
+        android:layout_below="@+id/iv_recommend"
+        android:layout_alignLeft="@+id/iv_recommend"
+        android:layout_alignStart="@+id/iv_recommend"
+        android:layout_alignRight="@+id/iv_recommend"
+        android:layout_alignEnd="@+id/iv_recommend"/>
+
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="￥88.00"
+        android:textColor="#ff4242"
+        android:layout_below="@+id/tv_name"
+        android:layout_alignRight="@+id/tv_name"
+        android:layout_alignEnd="@+id/tv_name"
+        android:layout_toRightOf="@+id/textView2"
+        android:layout_toEndOf="@+id/textView2"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="起拍价￥:"
+        android:textColor="#6f5643"
+        android:layout_below="@+id/tv_name"
+        android:layout_alignLeft="@+id/tv_name"
+        android:layout_alignStart="@+id/tv_name"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="剩余时间："
+        android:textColor="#002300"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/tv_price"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"/>
+    <TextView
+        android:id="@+id/re_losttime_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00天00小时00分钟"
+        android:textColor="#ffff00"
+        android:background="#ff0000"
+        android:layout_below="@+id/textView3"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_alignRight="@+id/tv_price"
+        android:layout_alignEnd="@+id/tv_price"/>
+
+</RelativeLayout>

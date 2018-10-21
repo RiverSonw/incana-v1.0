@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="horizontal">
+
+<!--用户已经获得竞价的拍卖商品-->
+    <ImageView
+        android:id="@+id/order_auction_super_img"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+
+        android:src="@drawable/new_img_loading_2"/>
+
+    <LinearLayout
+        android:id="@+id/order_auction_super_iner_lin1"
+        android:layout_width="180dp"
+        android:layout_height="80dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/order_auction_super_commname"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="商品名称,用户参与竞价的商品信息都在这里"
+            android:textSize="12dp"
+            android:textColor="#000000"/>
+        <TextView
+            android:id="@+id/order_auction_super_describe"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="商品描述信息：嘛嘛嘛叭叭叭"
+            android:textSize="12dp"
+            android:textColor="#303030"/>
+
+        <TextView
+            android:id="@+id/order_auction_super_losttime"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="剩余时间：60天20小时30分钟"
+            android:textSize="12dp"
+            android:textColor="#ffff00"
+            android:background="#ff0000"/>
+        <TextView
+            android:id="@+id/order_auction_super_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10dp"
+            android:text="当前的拍卖状态：获得竞价/完成拍卖"/>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/order_auction_super_iner_lin2"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/order_auction_super_username"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:textSize="10dp"
+            android:text="最高价报价者名称："/>
+        <TextView
+            android:id="@+id/order_auction_super_maxprice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ff0000"
+            android:textSize="10dp"
+            android:text="报价是：330￥"/>
+        <TextView
+            android:id="@+id/order_auction_super_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="联系方式：手机：11111111111 地址：8栋"
+            android:textSize="10dp"
+            android:textColor="#ff0000"/>
+
+    </LinearLayout>
+</LinearLayout>

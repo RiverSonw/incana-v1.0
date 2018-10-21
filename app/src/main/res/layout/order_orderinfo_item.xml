@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#fff"
+              android:orientation="vertical">
+<!--用户的订单信息-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/home_arrow_left_new" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="您的订单信息"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/order_orderinfo_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/home_arrow_right"
+            android:gravity="end"
+            android:text="查看更多" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/order_orderinfo_show_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="您未参加任何竞价"
+            android:textSize="20dp"
+            android:textColor="#ff0000"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/order_orderinfo_show_gr"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        android:horizontalSpacing="10dp"
+        android:numColumns="1"
+        android:verticalSpacing="10dp"></GridView>
+</LinearLayout>

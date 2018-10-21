@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:weightSum="1"
+    android:background="@drawable/hehua1">
+
+    <!--用户登录页面-->
+    <!--标题栏-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp">
+
+        <ImageView
+            android:id="@+id/user_login_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/top_bar_left_back"
+            android:clickable="true"
+            android:onClick="onClick"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="用户登录界面"
+            android:textColor="#ffffff"
+            android:textSize="20dp"/>
+
+        <ImageButton
+            android:id="@+id/ib_goods_info_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_more"/>
+    </LinearLayout>
+    <!--分割线-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eeee"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="手机号："
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="75dp"
+                android:layout_marginLeft="66dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:textSize="20sp"
+                android:textColor="#eeeeee"/>
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="用户密码："
+                android:layout_marginTop="18dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView6"
+                android:layout_marginLeft="46dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:textSize="20sp"
+                android:textColor="#eeeeee"/>
+
+            <TextView
+                android:id="@+id/user_login_msg"
+                android:layout_width="165dp"
+                android:layout_height="23dp"
+                android:text="重复密码失败请重新输入"
+                android:visibility="gone"
+                android:textColor="#ff0000"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="160dp"
+                android:layout_marginLeft="110dp"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+
+            <EditText
+                android:id="@+id/user_login_userphone"
+                android:layout_width="140dp"
+                android:layout_height="41dp"
+                android:hint="手机号"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:inputType="phone"
+                app:layout_constraintBaseline_toBaselineOf="@+id/textView6"
+                app:layout_constraintLeft_toRightOf="@+id/textView6"
+                android:layout_marginLeft="2dp"/>
+
+            <EditText
+                android:id="@+id/user_login_password"
+                android:layout_width="141dp"
+                android:layout_height="43dp"
+                android:hint="密码"
+                android:textColor="#000000"
+                android:inputType="textPassword"
+                android:textSize="15sp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/textView8"
+                app:layout_constraintLeft_toRightOf="@+id/textView8"
+                android:layout_marginLeft="2dp"/>
+
+            <Button
+                android:id="@+id/user_login_login_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="96dp"
+                android:layout_marginTop="209dp"
+                android:onClick="onClick"
+                android:text="登陆"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <Button
+                android:id="@+id/user_login_regist_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="去注册"
+                android:onClick="onClick"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="209dp"
+                app:layout_constraintLeft_toRightOf="@+id/user_login_login_button"
+                android:layout_marginLeft="44dp"/>
+
+            <TextView
+                android:id="@+id/user_login_success"
+                android:layout_width="139dp"
+                android:layout_height="17dp"
+                android:text="登录成功，欢迎回来"
+                android:textColor="#00ff00"
+                android:layout_marginTop="7dp"
+                app:layout_constraintTop_toBottomOf="@+id/user_login_faild"
+                android:layout_marginLeft="99dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/user_login_faild"
+                android:layout_width="157dp"
+                android:layout_height="16dp"
+                android:text="登录失败，请重新输入"
+                android:textColor="#ff0000"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="159dp"
+                android:layout_marginLeft="99dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:visibility="gone"/>
+
+
+        </android.support.constraint.ConstraintLayout>
+    </LinearLayout>
+
+</LinearLayout>

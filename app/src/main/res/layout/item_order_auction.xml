@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#ffffff"
+              android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/order_auctioninfo_img"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+
+        android:src="@drawable/new_img_loading_2"/>
+
+    <LinearLayout
+        android:id="@+id/order_auctioninfo_iner_lin1"
+        android:layout_width="180dp"
+        android:layout_height="80dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/order_auctioninfo_commname"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="您尚未发布任何拍卖"
+            android:textSize="10dp"
+            android:textColor="#000000"/>
+        <TextView
+            android:id="@+id/order_auctioninfo_describe"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="商品描述信息："
+            android:textSize="10dp"
+            android:textColor="#303030"/>
+
+        <TextView
+            android:id="@+id/order_auctioninfo_losttime"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="剩余时间："
+            android:textSize="10dp"
+            android:textColor="#ffff00"
+            android:background="#ff0000"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/order_auctioninfo_iner_lin2"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/order_auctioninfo_auctionstate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10dp"
+            android:text="拍卖状态"
+            android:textColor="#000000"/>
+        <TextView
+            android:id="@+id/order_auctioninfo_staprice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10dp"
+            android:textColor="#ff0000"
+            android:text="起拍价："/>
+        <TextView
+            android:id="@+id/order_auctioninfo_oneprice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10dp"
+            android:text="一口价："
+            android:visibility="gone"
+            android:textColor="#ff0000"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

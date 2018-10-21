@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/lingshi2">
+    <!--标题栏-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp">
+        <ImageView
+            android:id="@+id/ib_goods_info_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/top_bar_left_back" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="用户注册界面"
+            android:textColor="#564c4c"
+            android:textSize="20dp"/>
+
+        <ImageButton
+            android:id="@+id/ib_goods_info_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_more"/>
+    </LinearLayout>
+    <!--分割线-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eeee"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="800dp">
+
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*用户名："
+                android:textSize="15sp"
+                android:textColor="#000000"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="32dp"
+                android:layout_marginLeft="74dp"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*密码："
+                android:textSize="15sp"
+                android:textColor="#000000"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView21"
+                android:layout_marginLeft="89dp"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*再次输入密码："
+                android:textSize="15sp"
+                android:textColor="#000000"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView20"
+                android:layout_marginLeft="29dp"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*性别："
+                android:textSize="15sp"
+                android:textColor="#000000"
+                android:layout_marginTop="30dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView19"
+                android:layout_marginLeft="89dp"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*联系地址："
+                android:textSize="15sp"
+                android:textColor="#000000"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView16"
+                android:layout_marginLeft="59dp"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*联系电话："
+                android:textSize="15sp"
+                android:textColor="#000000"
+                android:layout_marginTop="27dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView18"
+                android:layout_marginLeft="59dp"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+
+            <Button
+                android:id="@+id/user_regist_rebutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="去登陆"
+                app:layout_constraintTop_toTopOf="parent"
+                android:onClick="onClick"
+                android:layout_marginTop="310dp"
+                android:layout_marginLeft="173dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                />
+
+            <Button
+                android:id="@+id/user_regist_jplogbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="确认注册"
+                android:onClick="onClick"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="310dp"
+                android:layout_marginLeft="63dp"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+
+            <EditText
+                android:id="@+id/user_regist_username"
+                android:layout_width="129dp"
+                android:layout_height="37dp"
+                android:hint="用户名"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/textView21"
+                app:layout_constraintLeft_toRightOf="@+id/textView21"
+                android:layout_marginLeft="8dp"/>
+
+            <EditText
+                android:id="@+id/user_regist_password"
+                android:layout_width="131dp"
+                android:layout_height="38dp"
+                android:hint="密码"
+                android:textColor="#000000"
+                android:inputType="textPassword"
+                android:textSize="12sp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/textView20"
+                app:layout_constraintLeft_toRightOf="@+id/textView20"
+                android:layout_marginLeft="8dp"/>
+
+            <EditText
+                android:id="@+id/user_regist_repassword"
+                android:layout_width="131dp"
+                android:layout_height="39dp"
+                android:hint="再次输入"
+                android:textColor="#000000"
+                android:inputType="textPassword"
+                android:textSize="12sp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/textView19"
+                app:layout_constraintLeft_toRightOf="@+id/textView19"
+                android:layout_marginLeft="8dp"
+                tools:layout_editor_absoluteY="102dp"/>
+
+<RadioGroup
+    android:id="@+id/user_regint_rag"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    app:layout_constraintTop_toTopOf="parent"
+    android:layout_marginTop="140dp"
+    app:layout_constraintLeft_toRightOf="@+id/textView18"
+    android:layout_marginLeft="8dp">
+
+
+    <RadioButton
+        android:id="@+id/user_regist_nan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="男"/>
+
+    <RadioButton
+        android:id="@+id/user_regist_nv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="女"/>
+</RadioGroup>
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="带*号的必须填写"
+                android:textSize="12sp"
+                android:textColor="#000000"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="281dp"
+                android:layout_marginLeft="113dp"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+
+            <EditText
+                android:id="@+id/user_regist_address"
+                android:layout_width="130dp"
+                android:layout_height="38dp"
+                android:hint="地址"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/textView17"
+                app:layout_constraintLeft_toRightOf="@+id/textView17"
+                android:layout_marginLeft="8dp"/>
+
+            <EditText
+                android:id="@+id/user_regist_phone"
+                android:layout_width="130dp"
+                android:layout_height="35dp"
+                android:hint="联系电话"
+                android:textColor="#000000"
+                android:inputType="phone"
+                android:textSize="12sp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/textView16"
+                app:layout_constraintLeft_toRightOf="@+id/textView16"
+                android:layout_marginLeft="8dp"/>
+
+
+
+
+        </android.support.constraint.ConstraintLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.snow.incana.app.UserLogoutConAcitvity">
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="是否确认注销"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="86dp"
+        android:layout_marginLeft="82dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textColor="#ff0000"
+        android:textSize="30dp"/>
+
+    <Button
+        android:id="@+id/user_logout_sure_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="确认注销"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="147dp"
+        android:layout_marginLeft="64dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textColor="#000000"/>
+
+    <Button
+        android:id="@+id/user_logout_no_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="不注销"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="147dp"
+        app:layout_constraintLeft_toRightOf="@+id/user_logout_sure_button"
+        android:layout_marginLeft="35dp"
+        android:textColor="#000000"/>
+</android.support.constraint.ConstraintLayout>

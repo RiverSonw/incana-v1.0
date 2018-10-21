@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_goods_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.snow.incana.app.GoodsInfoActivity">
+
+   <!--标题栏-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp">
+        <ImageView
+            android:id="@+id/ib_goods_info_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/top_bar_left_back" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="商品详情"
+            android:textColor="#564c4c"
+            android:textSize="20dp"/>
+
+        <ImageButton
+            android:id="@+id/ib_goods_info_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_more"/>
+    </LinearLayout>
+<!--分割线-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eeee"/>
+    <!--Fragment-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1300dp"
+                    android:background="#fff"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/ib_goods_info_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="350dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/new_img_loading_2"/>
+
+                    <TextView
+                        android:id="@+id/ib_goods_info_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:text="商品名称在这里"
+                        android:textColor="#323427"/>
+
+                    <TextView
+                        android:id="@+id/ib_goods_info_describe"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="商品的描述信息"
+                        android:textColor="#767f86" />
+<!--剩余时间用倒计时做成-->
+                    <TextView
+                        android:id="@+id/ib_goods_info_losttime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#ffff00"
+                        android:background="#ff0000"
+                        android:text="剩余时间为 00天00小时00分钟00秒"
+                        android:padding="10dp"
+                        android:textSize="20sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/ib_goods_info_staprice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="￥1499商品起拍价格"
+                        android:textColor="#ed3f3f"
+                        android:textSize="20sp"/>
+
+                    <TextView
+                        android:id="@+id/ib_goods_info_oneprice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="一口价:无"
+                        android:textColor="#ed3f3f"
+                        android:textSize="20sp"/>
+
+                    <TextView
+                        android:id="@+id/ib_goods_info_maxprice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="当前最高价:暂无"
+                        android:textColor="#ed3f3f"
+                        android:textSize="20sp"/>
+
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:textSize="20sp"
+                        android:text="输入您的报价￥"/>
+                    <EditText
+                        android:id="@+id/ib_goods_userprice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:padding="10dp"
+                        android:inputType="number"
+                        android:lines="1"
+                        android:hint="您的报价"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/welcome_view"/>
+                    
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#ed3f3f"/>
+
+                </LinearLayout>
+
+            </ScrollView>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_goods_root"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="#fff">
+
+            <TextView
+                android:id="@+id/ib_goods_info_callcenter"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/icon_callserver_unpressed"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="联系客服"
+                android:textColor="#393b3e" />
+
+            <TextView
+                android:id="@+id/ib_goods_info_joinauction"
+                android:layout_width="180dp"
+                android:layout_height="51dp"
+                android:layout_gravity="center"
+                android:background="@drawable/add_cart_bg_selector"
+                android:gravity="center"
+                android:text="参与竞拍"
+                android:textColor="#fff" />
+
+
+
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

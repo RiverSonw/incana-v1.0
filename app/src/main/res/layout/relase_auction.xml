@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    android:background="@drawable/shuji2">
+
+    <!--用户发布拍卖的页面-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp">
+        <ImageView
+            android:id="@+id/ib_goods_info_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/top_bar_left_back" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="发布拍卖"
+            android:textColor="#564c4c"
+            android:textSize="20dp"/>
+        <ImageButton
+            android:id="@+id/ib_goods_info_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_more"/>
+    </LinearLayout>
+    <!--分割线-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eeee"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="500dp">
+
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*商品名称："
+                android:textSize="15sp"
+                android:textColor="#000000"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="68dp"
+                android:layout_marginLeft="45dp"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*起拍价￥："
+                android:textSize="15sp"
+                android:textColor="#000000"
+                android:layout_marginTop="13dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView4"
+                android:layout_marginLeft="45dp"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*拍卖时间/天："
+                android:textSize="15sp"
+                android:textColor="#000000"
+                android:layout_marginTop="13dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView5"
+                android:layout_marginLeft="24dp"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*标签："
+                android:textSize="15sp"
+                android:textColor="#000000"
+                android:layout_marginTop="18dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView7"
+                android:layout_marginLeft="75dp"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="一口价￥："
+                android:textSize="15sp"
+                android:textColor="#000000"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView9"
+                android:layout_marginLeft="52dp"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*商品描述："
+                android:textSize="15sp"
+                android:textColor="#000000"
+                android:layout_marginTop="21dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView10"
+                android:layout_marginLeft="45dp"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+
+
+            <EditText
+                android:id="@+id/re_auction_name"
+                android:layout_width="155dp"
+                android:layout_height="36dp"
+                android:hint="商品名"
+                android:textSize="12sp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/textView4"
+                app:layout_constraintLeft_toRightOf="@+id/textView4"
+                android:layout_marginLeft="12dp"/>
+
+            <EditText
+                android:id="@+id/re_auction_staprice"
+                android:layout_width="155dp"
+                android:layout_height="36dp"
+                android:hint="起拍价"
+                android:textSize="12sp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/textView5"
+                app:layout_constraintLeft_toRightOf="@+id/textView5"
+                android:layout_marginLeft="12dp"/>
+            <EditText
+                android:id="@+id/re_auction_deadtime"
+                android:layout_width="156dp"
+                android:layout_height="36dp"
+                android:hint="拍卖时间/天"
+                android:textSize="12sp"
+                android:inputType="number"
+                app:layout_constraintBaseline_toBaselineOf="@+id/textView7"
+                app:layout_constraintLeft_toRightOf="@+id/textView7"
+                android:layout_marginLeft="12dp"/>
+            <EditText
+                android:id="@+id/re_auction_label"
+                android:layout_width="156dp"
+                android:layout_height="36dp"
+                android:hint="标签"
+                android:textSize="12sp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/textView9"
+                app:layout_constraintLeft_toRightOf="@+id/textView9"
+                android:layout_marginLeft="12dp"/>
+            <EditText
+                android:id="@+id/re_auction_describe"
+                android:layout_width="156dp"
+                android:layout_height="36dp"
+                android:hint="描述"
+                android:textSize="12sp"
+                android:inputType="textMultiLine"
+                app:layout_constraintBaseline_toBaselineOf="@+id/textView12"
+                app:layout_constraintLeft_toRightOf="@+id/textView12"
+                android:layout_marginLeft="12dp"/>
+            <EditText
+                android:id="@+id/re_auction_oneprice"
+                android:layout_width="156dp"
+                android:layout_height="36dp"
+                android:hint="一口价必须大于起拍价"
+                android:textSize="12sp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/textView10"
+                app:layout_constraintLeft_toRightOf="@+id/textView10"
+                android:layout_marginLeft="12dp"/>
+
+            <TextView
+                android:id="@+id/textView_tixing"
+                android:layout_width="220dp"
+                android:layout_height="33dp"
+                android:text="带*的属性必须填写,结束时间不填写则默认20天后结束"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="291dp"
+                android:layout_marginLeft="60dp"
+                android:textColor="#000000"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+
+            <TextView
+                android:id="@+id/textView_tixing2"
+                android:layout_width="150dp"
+                android:layout_height="20dp"
+                android:text="请重新填写数据"
+                android:textColor="#ff0000"
+                android:visibility="gone"
+                android:layout_marginTop="324dp"
+                android:layout_marginLeft="60dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+            <Button
+                android:id="@+id/re_auciton_button"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="104dp"
+                android:layout_marginTop="350dp"
+                android:background="@drawable/add_cart_bg_selector"
+                android:onClick="onClick"
+                android:text="发布拍卖"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+        </android.support.constraint.ConstraintLayout>
+    </LinearLayout>
+
+</RelativeLayout>

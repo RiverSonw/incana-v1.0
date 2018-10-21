@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.example.snow.incana">
+
+    <!-- 使用网络的权限 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!-- 把数据写入SD卡的权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/incana_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/incana_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".app.WelcomActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".app.MainActivity">
+        </activity>
+        <activity android:name=".app.GoodsInfoActivity">
+        </activity>
+        <activity android:name=".app.BaseActivity">
+        </activity>
+        <activity android:name=".app.UserLoginActivity">
+        </activity>
+        <activity android:name=".app.UserLogoutConAcitvity">
+        </activity>
+        <activity android:name=".app.MSGActivity">
+        </activity>
+        <activity android:name=".app.UserRegistActivity">
+        </activity>
+    </application>
+
+</manifest>
